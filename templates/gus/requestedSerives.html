@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="col-8" style="margin-left: 90px">
+        <div class="card text-dark bg-light mb-3">
+            {% for request in object %}
+            <div class="card-header" style="border-top: #f58c83 5px solid; background-color: #f7e0de">
+                <h3>{{ request.req_date }}</h3>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+{% endblock content %}
